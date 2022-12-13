@@ -1,0 +1,36 @@
+@mixin flex-direction-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-direction-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin widthheightfull {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+@mixin widthheight($widthper,$heightper) {
+    width: $widthper;
+    height: $heightper;
+    box-sizing: border-box;
+}
+@mixin gridcontainer($column,$row){
+    display: grid;
+    grid-template-columns:$column;
+    grid-template-rows:$row;
+
+}
+
+// /* $radius is the parameter of the function */
+
+// @mixin border-radius($radius) {
+//     -webkit-border-radius: $radius;
+//     -moz-border-radius: $radius;
+//     border-radius: $radius;
+// }

@@ -1,0 +1,31 @@
+// @import 'mixins';
+@import 'card';
+
+.grid-container{
+    @include gridcontainer((auto auto auto),(auto auto));
+    column-gap: 10px;
+    row-gap: 60px;
+    margin: auto;
+    width: 90%;
+    background-color: #FFFFFF;
+}
+.lessthanTWO{
+background-color: red;
+}
+.btwnTWOandFour{
+    background-color: orange;
+}
+.greaterthanFour{
+    background-color: rgb(33, 165, 33);
+}
+// @import 'variables';
+// @import 'mixins';
+// @import 'card';
+
+// body {gridcontainer
+//     font-family: $fonts; /* variable usage */
+//     background-color: $primary-color;
+//     padding: $spacing;
+//     min-height: 100vh;
+//     @include flex-center(); /* using the mixins function */
+// }

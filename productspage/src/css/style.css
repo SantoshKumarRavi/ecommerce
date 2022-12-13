@@ -1,0 +1,110 @@
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transform: rotate(0deg);
+}
+.card-wrapper .card-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 92%;
+  height: 80%;
+  box-sizing: border-box;
+  margin: 10px;
+  background-color: #FFFFFF;
+}
+.card-wrapper .card-top .card-header {
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.card-wrapper .card-top .card-header .title {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-wrapper .card-top .img-wrapper {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+}
+.card-wrapper .card-top .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.card-wrapper .card-bottom {
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper .card-bottom .title {
+  height: 50%;
+}
+.card-wrapper .card-bottom .product-details {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.card-wrapper-parent {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.card-wrapper-parent:focus {
+  transition: transform 0.4s;
+  transform: rotate(20deg);
+}
+
+.card-wrapper-parent:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 60px;
+  margin: auto;
+  width: 90%;
+  background-color: #FFFFFF;
+}
+
+.lessthanTWO {
+  background-color: red;
+}
+
+.btwnTWOandFour {
+  background-color: orange;
+}
+
+.greaterthanFour {
+  background-color: rgb(33, 165, 33);
+}/*# sourceMappingURL=style.css.map */

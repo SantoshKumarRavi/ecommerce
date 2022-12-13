@@ -1,0 +1,100 @@
+@import 'mixins';
+
+.card-wrapper{
+    @include flex-direction-column();
+    @include widthheight(100%,100%);    
+    background-color:#FFFFFF;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transform: rotate(0deg);
+    .card-top{
+        @include flex-direction-column();
+        @include widthheight(92%,80%);
+        margin: 10px;
+        background-color:#FFFFFF;
+    .card-header{
+        @include widthheight(100%,20%);
+        @include flex-direction-row();
+        justify-content: space-between;
+        .title{
+            width: 50px;
+            @include flex-direction-row();
+        }
+    }
+    .img-wrapper{
+        @include widthheight(100%,80%);
+        img{
+            @include widthheight(100%,100%);    
+        }
+    }
+
+    }
+    .card-bottom{
+        @include widthheight(100%,20%);
+        background-color: beige;
+        @include flex-direction-column();
+        .title{
+            height: 50%;
+        }
+        .product-details{
+            @include widthheight(100%,50%);
+            @include flex-direction-row();
+            justify-content: space-around;
+        }
+    }
+}
+
+.card-wrapper-parent{
+    @include widthheight(300px,300px); 
+}
+
+.card-wrapper-parent:focus{
+    transition:transform 0.4s ;
+    transform: rotate(20deg);
+}
+.card-wrapper-parent:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+
+// .card {
+//     background-color: white;
+//     width: 20rem;
+//     overflow: hidden;
+//     margin: 2rem;
+//     box-shadow: 5px 5px 5px 5px #000;
+//     @include border-radius(0.5rem); /* using the mixins function */
+    
+//     img {
+//         height: 15rem;
+//         background-size: cover;
+//         background-position: center center;
+//     }
+
+//     .card_content {
+//         padding: $spacing;
+//     }
+
+//     .card_title {
+//         margin: 0;
+//         color: black;
+//     }
+
+//     .card_description {
+//         margin: 0;
+//         color: $dark-grey;
+//     }
+
+//     &_dark {
+
+//         background-color: black;
+
+//         .card_title {
+//             color: white;
+//         }
+//         .card_description{
+//             color: yellow;
+//         }
+//     }
+
+// }
